@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500;700&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "inverse-primary": "#526600", "secondary-fixed": "#6bff8f", "secondary": "#4ae176",
+          "on-secondary": "#003915", "on-surface": "#e3e2e2", "secondary-container": "#00b954",
+          "on-secondary-fixed": "#002109", "outline-variant": "#444933", "tertiary-fixed": "#acedff",
+          "on-secondary-fixed-variant": "#005321", "inverse-surface": "#e3e2e2", "secondary-fixed-dim": "#4ae176",
+          "on-primary-fixed": "#171e00", "tertiary-container": "#acedff", "on-primary-fixed-variant": "#3d4d00",
+          "surface-container-high": "#292a2a", "error": "#ffb4ab", "primary-fixed": "#c8f31d",
+          "tertiary-fixed-dim": "#4cd7f6", "on-tertiary-container": "#006e81", "outline": "#8f937a",
+          "tertiary": "#ffffff", "surface-tint": "#aed500", "on-error": "#690005",
+          "on-error-container": "#ffdad6", "surface-container-lowest": "#0d0e0f",
+          "on-tertiary-fixed": "#001f26", "surface-container": "#1e2020", "surface-bright": "#383939",
+          "primary-fixed-dim": "#aed500", "on-secondary-container": "#004119", "primary-container": "#c8f31d",
+          "background": "#121414", "surface-container-low": "#1a1c1c", "primary": "#ffffff",
+          "surface-dim": "#121414", "on-tertiary-fixed-variant": "#004e5c", "on-background": "#e3e2e2",
+          "on-primary": "#293500", "surface-variant": "#343535", "surface-container-highest": "#343535",
+          "error-container": "#93000a", "on-surface-variant": "#c5c9ad", "inverse-on-surface": "#2f3131",
+          "surface": "#121414", "tertiary-fixed": "#acedff", "on-tertiary": "#003640"
+        },
+        "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" },
+        "spacing": { "margin-mobile": "1rem", "gutter-sm": "0.5rem", "gutter-xs": "0.25rem",
+          "margin-tablet": "1.5rem", "panel-gap": "0.75rem", "gutter-lg": "1.5rem", "gutter-xl": "2rem",
+          "gutter-md": "1rem", "margin-desktop": "2rem" },
+        "fontFamily": {
+          "label-caps": ["JetBrains Mono"], "metric-display": ["JetBrains Mono"], "label-code": ["JetBrains Mono"],
+          "display-hero": ["Space Grotesk"], "body-md": ["Inter"], "body-lg": ["Inter"],
+          "headline-lg": ["Space Grotesk"], "headline-md": ["Space Grotesk"], "headline-sm": ["Space Grotesk"],
+          "headline-lg-mobile": ["Space Grotesk"], "body-sm": ["Inter"], "display-hero-mobile": ["Space Grotesk"]
+        },
+        "fontSize": {
+          "label-caps": ["10px", { "lineHeight": "12px", "letterSpacing": "0.12em", "fontWeight": "700" }],
+          "metric-display": ["28px", { "lineHeight": "32px", "letterSpacing": "-0.02em", "fontWeight": "500" }],
+          "label-code": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }],
+          "display-hero": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.03em", "fontWeight": "700" }],
+          "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "-0.005em", "fontWeight": "400" }],
+          "body-lg": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+          "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+          "headline-md": ["22px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+          "headline-sm": ["18px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "600" }],
+          "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+          "body-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0em", "fontWeight": "400" }],
+          "display-hero-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }]
+        }
+      }
+    }
+  }</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 h-16 z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.5)]"><div class="h-16 w-full px-gutter-md flex items-center justify-between"><div class="flex items-center gap-gutter-md"><div class="flex flex-col"><span class="font-headline-sm text-headline-sm font-semibold tracking-tight text-primary uppercase">NGC AI Vision // Lost &amp; Found Object Detector</span><div class="flex items-center gap-gutter-sm"><span class="font-label-caps text-label-caps uppercase text-primary-fixed bg-surface-container-high px-gutter-xs py-0.5 rounded-DEFAULT">ResNet18 Embeddings</span><span class="flex items-center gap-1.5 font-label-caps text-label-caps uppercase text-secondary bg-surface-container-high px-gutter-xs py-0.5 rounded-DEFAULT"><span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>ENGINE ONLINE [CPU]</span></div></div></div><div class="flex items-center gap-gutter-md"><div class="hidden sm:flex items-center gap-gutter-sm px-gutter-sm py-1 bg-surface-container-low rounded-lg"><span class="material-symbols-outlined text-primary-fixed text-[18px]">memory</span><span class="font-label-code text-label-code text-on-surface-variant">local inference <span class="text-primary-fixed">[torch CPU]</span></span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><aside class="fixed left-0 top-16 bottom-0 w-64 bg-surface-container-lowest z-40 flex flex-col py-gutter-md shadow-[0_1px_8px_rgba(0,0,0,0.4)]"><div class="px-gutter-md pb-gutter-sm mb-gutter-sm"><span class="font-label-caps text-label-caps uppercase text-on-surface-variant">Workstation Nodes</span></div><nav class="flex-1 px-gutter-sm flex flex-col gap-1"><a aria-current="page" class="flex items-center gap-gutter-sm px-gutter-sm py-2 transition-all bg-surface-container-high text-primary-fixed font-semibold rounded-lg shadow-[inset_0_0_0_1px_rgba(200,243,29,0.3)]" href="#" id="nav-live"><span class="material-symbols-outlined text-[18px]">view_in_ar</span>Live Detection View</a><button class="flex items-center gap-gutter-sm px-gutter-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-sm text-body-sm text-left" id="nav-model-weights" type="button"><span class="material-symbols-outlined text-[18px]">deployed_code</span>Model Weights</button></nav><div class="px-gutter-md pt-gutter-md bg-surface-container-lowest"><div class="bg-surface-container-low p-gutter-sm rounded-lg flex flex-col gap-1"><div class="flex items-center justify-between"><span class="font-label-caps text-label-caps text-on-surface-variant">MODEL</span><span class="font-label-code text-label-code text-primary-fixed">ResNet18 (frozen)</span></div><div class="flex items-center justify-between"><span class="font-label-caps text-label-caps text-on-surface-variant">EMBEDDING</span><span class="font-label-code text-label-code text-primary-fixed">512-D Cosine</span></div></div></div></aside><div class="pl-64"><main class="w-full pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Top Command & Engine Telemetry Banner -->
+<section class="w-full px-gutter-lg pt-gutter-md pb-gutter-sm bg-surface-container-lowest flex flex-col gap-4 shadow-sm"><div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4"><div><div class="flex items-center gap-2 mb-1"><span class="w-2 h-2 rounded-full bg-primary-fixed animate-ping"></span><span class="w-2 h-2 -ml-3.5 rounded-full bg-primary-fixed"></span><span class="font-label-caps text-label-caps uppercase text-primary-fixed tracking-wider">Local Inference Cluster</span><span class="text-on-surface-variant font-label-caps text-label-caps">/</span><span class="font-label-caps text-label-caps text-on-surface-variant">DETECTOR_PY_ENGINE</span></div><h1 class="font-display-hero text-headline-lg lg:text-display-hero font-bold tracking-tight text-primary">Find Your Lost Item Instantly</h1><p class="font-body-md text-body-md text-on-surface-variant max-w-3xl mt-1">Upload reference imagery of missing assets to execute 512-dimensional vector similarity projections against your candidate pool.</p></div><div class="flex flex-wrap items-center gap-2 bg-surface-container-low p-2 rounded-lg"><div class="flex flex-col px-3 py-1 bg-surface-container rounded"><span class="font-label-caps text-label-caps text-on-surface-variant">BACKEND</span><span class="font-label-code text-label-code text-primary-fixed flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">bolt</span> Flask + detector.py</span></div><div class="flex flex-col px-3 py-1 bg-surface-container rounded"><span class="font-label-caps text-label-caps text-on-surface-variant">VECTOR SPACE</span><span class="font-label-code text-label-code text-on-surface">512-D Cosine</span></div><div class="flex flex-col px-3 py-1 bg-surface-container rounded"><span class="font-label-caps text-label-caps text-on-surface-variant">ENGINE MODE</span><span class="font-label-code text-label-code text-secondary flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">memory</span> CPU</span></div></div></div></section>
+<!-- Interactive Dual Ingestion Dropzone Grid -->
+<section class="w-full px-gutter-lg py-gutter-md"><div class="grid grid-cols-1 lg:grid-cols-2 gap-panel-gap">
+<!-- Zone 1: Reference Target (Lost Item) -->
+<div class="bg-surface-container-low p-gutter-md rounded-lg flex flex-col justify-between shadow-md"><div class="flex items-center justify-between pb-gutter-sm"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-primary-fixed text-[20px]">filter_center_focus</span><span class="font-headline-sm text-headline-sm font-semibold text-primary">Lost Item Reference Target</span></div><span class="font-label-caps text-label-caps px-2 py-0.5 rounded bg-surface-container-high text-primary-fixed">SINGLE SOURCE // REF_01</span></div><div class="relative group cursor-pointer my-2 bg-surface-container-lowest hover:bg-surface-container transition-all duration-300 rounded-xl p-8 flex flex-col items-center justify-center text-center shadow-inner" id="target-drop-zone"><input accept="image/*" class="absolute inset-0 opacity-0 cursor-pointer z-10" id="target-file-input" type="file"/><div class="w-14 h-14 rounded-full bg-surface-container-high flex items-center justify-center mb-3 group-hover:scale-110 group-hover:bg-primary-container/20 transition-all"><span class="material-symbols-outlined text-primary-fixed text-[28px]">center_focus_strong</span></div><p class="font-headline-sm text-body-lg font-semibold text-primary mb-1">Drag &amp; drop reference item photo here</p><p class="font-body-sm text-body-sm text-on-surface-variant mb-4">or <span class="text-primary-fixed underline underline-offset-4 decoration-primary-fixed/40 hover:text-primary">browse local files</span> from workstation</p><div class="flex flex-wrap items-center justify-center gap-2"><span class="font-label-caps text-label-caps text-on-surface-variant bg-surface-container px-2 py-1 rounded">JPG, PNG (MAX 25MB)</span><span class="font-label-caps text-label-caps text-on-surface-variant bg-surface-container px-2 py-1 rounded">1 IMAGE REQUIRED</span></div><div class="hidden mt-4 px-3 py-1.5 rounded-full bg-surface-container-high items-center gap-2" id="target-file-status"><span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span><span class="font-label-code text-label-code text-primary" id="target-file-name">key_fob_ref_angle_a.raw</span><span class="font-label-caps text-label-caps text-primary-fixed" id="target-file-tag">EMBEDDING PENDING</span></div></div><div class="flex items-center justify-between pt-2"><div class="flex items-center gap-1.5 text-on-surface-variant"><span class="material-symbols-outlined text-[16px] text-primary-fixed">auto_fix_high</span><span class="font-body-sm text-body-sm">512-D spatial vector extraction enabled</span></div></div></div>
+<!-- Zone 2: Candidate Surveillance Pool (Batch Drop) -->
+<div class="bg-surface-container-low p-gutter-md rounded-lg flex flex-col justify-between shadow-md"><div class="flex items-center justify-between pb-gutter-sm"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-primary-fixed text-[20px]">layers</span><span class="font-headline-sm text-headline-sm font-semibold text-primary">Candidate Surveillance Pool</span></div><span class="font-label-caps text-label-caps px-2 py-0.5 rounded bg-surface-container-high text-secondary">INGESTION POOL // MAX 50</span></div><div class="relative group cursor-pointer my-2 bg-surface-container-lowest hover:bg-surface-container transition-all duration-300 rounded-xl p-8 flex flex-col items-center justify-center text-center shadow-inner" id="candidates-drop-zone"><input accept="image/*" class="absolute inset-0 opacity-0 cursor-pointer z-10" id="candidates-file-input" multiple="" type="file"/><div class="w-14 h-14 rounded-full bg-surface-container-high flex items-center justify-center mb-3 group-hover:scale-110 group-hover:bg-secondary/20 transition-all"><span class="material-symbols-outlined text-primary-fixed text-[28px]">drive_folder_upload</span></div><p class="font-headline-sm text-body-lg font-semibold text-primary mb-1">Drag &amp; drop candidate pool</p><p class="font-body-sm text-body-sm text-on-surface-variant mb-4">Upload up to 50 candidate photos from cameras or folders</p><div class="flex flex-wrap items-center justify-center gap-2"><span class="font-label-caps text-label-caps text-on-surface-variant bg-surface-container px-2 py-1 rounded">JPG, PNG</span><span class="font-label-caps text-label-caps text-on-surface-variant bg-surface-container px-2 py-1 rounded">MULTI-SELECT ENABLED</span></div><div class="mt-4 px-3 py-1.5 rounded-full bg-surface-container-high flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse" id="queue-dot"></span><span class="font-label-code text-label-code text-on-surface" id="queue-status-text">No candidate frames cached yet</span><span class="font-label-caps text-label-caps text-primary-fixed" id="queue-status-tag">[EMPTY]</span></div></div><div class="flex items-center justify-between pt-2"><span class="font-body-sm text-body-sm text-on-surface-variant">Supported: JPG, PNG candidate snapshots</span><div class="flex items-center gap-2"><span class="font-label-caps text-label-caps text-on-surface-variant">SIMILARITY:</span><span class="font-label-code text-label-code text-primary-fixed">512-D COSINE</span></div></div></div></div>
+<!-- Central High-Impact Inference Trigger -->
+<div class="w-full mt-gutter-md p-gutter-sm bg-surface-container-lowest rounded-lg flex flex-col sm:flex-row items-center justify-between gap-4 shadow-xl"><div class="flex items-center gap-3 pl-2"><div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center"><span class="material-symbols-outlined text-primary-fixed text-[22px]">tune</span></div><div><div class="flex items-center gap-2"><span class="font-headline-sm text-body-lg font-semibold text-primary">Inference Hyperparameters</span><span class="font-label-caps text-label-caps bg-surface-container text-primary-fixed px-1.5 py-0.5 rounded">AUTO-CONFIG</span></div><span class="font-body-sm text-body-sm text-on-surface-variant">Embedding: <strong class="text-on-surface font-label-code">ResNet18-512D</strong> • Grad-CAM Layer: <strong class="text-on-surface font-label-code">Layer4_Conv2D</strong></span></div></div><div class="flex items-center gap-3 w-full sm:w-auto"><button class="flex-1 sm:flex-none px-6 py-2.5 bg-primary-container hover:bg-primary-fixed text-on-primary-container font-headline-sm text-body-md font-bold tracking-tight rounded transition-all shadow-[0_0_24px_rgba(200,243,29,0.35)] hover:shadow-[0_0_32px_rgba(200,243,29,0.55)] flex items-center justify-center gap-2 cursor-pointer active:scale-95" id="run-matcher-btn" type="button"><span class="material-symbols-outlined text-[20px]">bolt</span> Run AI Similarity Matcher</button></div></div>
+</section>
+<!-- Real-Time Analysis Workspace: Similarity Rankings & Grad-CAM Heatmap Analysis -->
+<section class="w-full px-gutter-lg pb-gutter-xl"><div class="grid grid-cols-1 xl:grid-cols-12 gap-panel-gap items-start">
+<!-- Left Column (Candidates & Similarity Ranking Stream) -->
+<div class="xl:col-span-6 bg-surface-container-low p-gutter-md rounded-lg flex flex-col gap-4 shadow-md"><div class="flex items-center justify-between pb-gutter-xs"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-primary-fixed text-[20px]">leaderboard</span><h2 class="font-headline-sm text-headline-sm font-semibold text-primary">Candidate Similarity Rankings</h2></div><span class="font-label-caps text-label-caps px-2 py-0.5 rounded bg-surface-container-high text-primary-fixed flex items-center gap-1" id="top-match-badge"><span class="w-1.5 h-1.5 rounded-full bg-primary-fixed animate-ping"></span> AWAITING RUN</span></div><p class="font-body-sm text-body-sm text-on-surface-variant">Sorted by cosine divergence against the registered anchor target vector (REF_01).</p><!-- Dynamic ranked cards injected here --><div class="flex flex-col gap-3" id="rankings-list"><div class="p-4 bg-surface-container-lowest rounded-lg text-center font-label-code text-label-code text-on-surface-variant" id="rankings-placeholder">Upload a target + candidates, then run the matcher to populate rankings.</div></div><!-- Telemetry Summary Footer --><div class="flex items-center justify-between p-3 bg-surface-container rounded font-label-code text-label-code text-on-surface-variant" id="telemetry-footer"><span id="telemetry-processed">No candidates processed yet</span><span class="text-primary-fixed" id="telemetry-matches">—</span></div></div>
+<!-- Right Column (Grad-CAM Neural Activation HUD) -->
+<div class="xl:col-span-6 bg-surface-container-low p-gutter-md rounded-lg flex flex-col gap-4 shadow-md"><div class="flex items-center justify-between pb-gutter-xs"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-primary-fixed text-[20px]">biotech</span><h2 class="font-headline-sm text-headline-sm font-semibold text-primary">Grad-CAM Neural Activation HUD</h2></div><span class="font-label-caps text-label-caps px-2 py-0.5 rounded bg-surface-container-high text-on-surface flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span> LAYER: Layer4_Conv2D</span></div><div class="relative w-full rounded-lg overflow-hidden bg-surface-container-lowest shadow-2xl flex flex-col" id="gradcam-frame"><div class="absolute top-0 left-0 right-0 z-20 px-3 py-2 bg-gradient-to-b from-surface-container-lowest/90 via-surface-container-lowest/40 to-transparent flex items-center justify-between"><div class="flex items-center gap-2"><span class="font-label-caps text-label-caps text-primary-fixed tracking-widest uppercase">GRAD-CAM ACTIVATION MAPPING</span><span class="font-label-caps text-label-caps text-on-surface-variant">// RESNET18</span></div><div class="flex items-center gap-2 font-label-code text-label-code text-secondary"><span class="w-2 h-2 rounded-full bg-secondary"></span><span id="gradcam-live-tag">LIVE INFERENCE PASS</span></div></div><div class="relative w-full aspect-video flex items-center justify-center overflow-hidden bg-surface-container-lowest"><img alt="Grad-CAM heatmap of the best-matching candidate appears here after a run" class="w-full h-full object-contain object-center" id="gradcam-img" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='640' height='360'%3E%3Crect width='640' height='360' fill='%230d0e0f'/%3E%3Ctext x='50%25' y='50%25' fill='%23c5c9ad' font-family='monospace' font-size='14' text-anchor='middle'%3EGrad-CAM heatmap renders here after inference%3C/text%3E%3C/svg%3E"/><svg class="absolute inset-0 w-full h-full pointer-events-none opacity-40" xmlns="http://www.w3.org/2000/svg"><circle cx="50%" cy="50%" fill="#c8f31d" r="4"></circle><line stroke="#c8f31d" stroke-dasharray="4 4" stroke-width="0.5" x1="0" x2="45%" y1="50%" y2="50%"></line><line stroke="#c8f31d" stroke-dasharray="4 4" stroke-width="0.5" x1="55%" x2="100%" y1="50%" y2="50%"></line><line stroke="#c8f31d" stroke-dasharray="4 4" stroke-width="0.5" x1="50%" x2="50%" y1="0" y2="45%"></line><line stroke="#c8f31d" stroke-dasharray="4 4" stroke-width="0.5" x1="50%" x2="50%" y1="55%" y2="100%"></line></svg></div><div class="p-3 bg-surface-container-lowest flex flex-col gap-2"><div class="flex items-center justify-between"><div class="flex items-center gap-3"><span class="font-label-code text-label-code text-primary" id="gradcam-target">Target: —</span><span class="font-label-caps text-label-caps text-on-surface-variant" id="gradcam-peak">PEAK REGION: —</span></div><div class="flex items-center gap-2 font-label-code text-label-code"><span class="text-on-surface-variant">Max Similarity:</span><span class="text-primary-fixed font-bold" id="gradcam-max">—</span></div></div><div class="flex items-center gap-2 pt-1"><span class="font-label-caps text-label-caps text-on-surface-variant">ACTIVATION SPECTRUM</span><div class="flex-1 h-2 rounded bg-gradient-to-r from-blue-600 via-green-500 via-yellow-400 to-red-500"></div><span class="font-label-caps text-label-caps text-primary-fixed">MAX</span></div></div></div><!-- Analytical Explainer Pill Card --><div class="p-3.5 bg-surface-container-lowest rounded-lg flex items-start gap-3"><div class="w-8 h-8 rounded bg-primary-container/20 flex items-center justify-center shrink-0 mt-0.5"><span class="material-symbols-outlined text-primary-fixed text-[18px]">visibility</span></div><div class="flex flex-col gap-1"><span class="font-headline-sm text-body-md font-semibold text-primary">Neural Attention Verification</span><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed" id="verdict-sentence">The natural-language match verdict and heatmap explanation appear here after a run.</p></div></div></div>
+</div>
+</section>
+<!-- Model Weights info modal (populated from /api/model-info) -->
+<div class="hidden fixed inset-0 z-[60] flex items-center justify-center p-gutter-md" id="model-modal"><div class="absolute inset-0 bg-black/70 backdrop-blur-sm" id="model-modal-backdrop"></div><div class="relative bg-surface-container-low rounded-lg shadow-2xl w-full max-w-md p-gutter-md flex flex-col gap-3"><div class="flex items-center justify-between"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-primary-fixed text-[20px]">deployed_code</span><span class="font-headline-sm text-headline-sm font-semibold text-primary">Model Weights</span></div><button class="w-8 h-8 rounded flex items-center justify-center text-on-surface-variant hover:text-primary-fixed transition-colors" id="model-modal-close" type="button"><span class="material-symbols-outlined text-[20px]">close</span></button></div><div class="bg-surface-container-lowest rounded-lg p-gutter-sm font-label-code text-label-code" id="model-modal-body"><div class="text-on-surface-variant">Loading live configuration from detector.py...</div></div><p class="font-body-sm text-body-sm text-on-surface-variant">Values are introspected from the running detector.py — not hardcoded in this UI.</p></div></div>
+<!-- Interactive JavaScript: real uploads, real results -->
+<script>
+    (function() {
+      // ---- Model Weights modal wiring ----
+      const modal = document.getElementById('model-modal');
+      const modalBody = document.getElementById('model-modal-body');
+      const FIELDS = [
+        ['model', 'Model'], ['embedding_dim', 'Embedding dimension'],
+        ['similarity_metric', 'Similarity metric'],
+        ['gradcam_layer', 'Grad-CAM target layer'], ['device', 'Device']
+      ];
+      function openModal() {
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+        fetch('/api/model-info').then(r => r.json()).then(info => {
+          modalBody.innerHTML = FIELDS.map(([k, label]) =>
+            '<div class="flex items-center justify-between py-1.5 border-b border-surface-container last:border-0">' +
+            '<span class="text-on-surface-variant">' + label + '</span>' +
+            '<span class="text-primary-fixed font-semibold text-right">' + info[k] + '</span></div>'
+          ).join('');
+        }).catch(() => {
+          modalBody.innerHTML = '<div class="text-error">Could not load model info — is the server running?</div>';
+        });
+      }
+      function closeModal() {
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+      }
+      document.getElementById('nav-model-weights').addEventListener('click', openModal);
+      document.getElementById('model-modal-close').addEventListener('click', closeModal);
+      document.getElementById('model-modal-backdrop').addEventListener('click', closeModal);
+      document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+      // clicking Live Detection View just re-anchors the page (default active view)
+      document.getElementById('nav-live').addEventListener('click', e => {
+        e.preventDefault(); closeModal(); window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+
+      const targetInput = document.getElementById('target-file-input');
+      const targetDropZone = document.getElementById('target-drop-zone');
+      const targetStatus = document.getElementById('target-file-status');
+      const targetFileName = document.getElementById('target-file-name');
+      const candInput = document.getElementById('candidates-file-input');
+      const candDropZone = document.getElementById('candidates-drop-zone');
+      const queueText = document.getElementById('queue-status-text');
+      const queueTag = document.getElementById('queue-status-tag');
+      const runBtn = document.getElementById('run-matcher-btn');
+      let targetFile = null, candFiles = [];
+
+      function fmtSize(bytes) {
+        if (bytes < 1024) return bytes + ' B';
+        if (bytes < 1048576) return (bytes/1024).toFixed(1) + ' KB';
+        return (bytes/1048576).toFixed(1) + ' MB';
+      }
+
+      function setTarget(file) {
+        if (!file) return;
+        targetFile = file;
+        targetFileName.textContent = file.name + ' (' + fmtSize(file.size) + ')';
+        document.getElementById('target-file-tag').textContent = '512-D READY';
+        targetStatus.classList.remove('hidden');
+        targetStatus.classList.add('flex');
+      }
+
+      function setCandidates(files) {
+        candFiles = Array.from(files || []).filter(f => f.type.startsWith('image/'));
+        if (candFiles.length) {
+          queueText.textContent = candFiles.length + ' candidate frame' + (candFiles.length > 1 ? 's' : '') + ' cached: ' + candFiles.map(f => f.name).join(', ');
+          queueTag.textContent = '[READY]';
+        } else {
+          queueText.textContent = 'No candidate frames cached yet';
+          queueTag.textContent = '[EMPTY]';
+        }
+      }
+
+      targetInput.addEventListener('change', e => setTarget(e.target.files[0]));
+      candInput.addEventListener('change', e => setCandidates(e.target.files));
+      [targetDropZone, candDropZone].forEach(zone => {
+        ['dragenter', 'dragover'].forEach(ev => zone.addEventListener(ev, () => zone.classList.add('bg-surface-container')));
+        ['dragleave', 'drop'].forEach(ev => zone.addEventListener(ev, () => zone.classList.remove('bg-surface-container')));
+      });
+      targetDropZone.addEventListener('drop', e => { e.preventDefault(); setTarget(e.dataTransfer.files[0]); });
+      candDropZone.addEventListener('drop', e => { e.preventDefault(); setCandidates(e.dataTransfer.files); });
+
+      runBtn.addEventListener('click', async function() {
+        if (!targetFile) { alert('Upload a lost-item reference photo first.'); return; }
+        if (!candFiles.length) { alert('Upload at least one candidate image.'); return; }
+        const originalContent = runBtn.innerHTML;
+        runBtn.disabled = true;
+        runBtn.innerHTML = '<span class="material-symbols-outlined text-[20px] animate-spin">refresh</span> Running 512-D Cosine Pass...';
+        const fd = new FormData();
+        fd.append('target', targetFile);
+        candFiles.forEach(f => fd.append('candidates', f));
+        try {
+          const res = await fetch('/api/match', { method: 'POST', body: fd });
+          const data = await res.json();
+          if (!res.ok) throw new Error(data.error || 'Server error');
+          renderResults(data);
+          runBtn.innerHTML = '<span class="material-symbols-outlined text-[20px]">check</span> Match Found (' + data.best_percent.toFixed(1) + '%)';
+        } catch (err) {
+          alert('Match failed: ' + err.message);
+          runBtn.innerHTML = '<span class="material-symbols-outlined text-[20px]">error</span> Failed — Retry';
+        } finally {
+          setTimeout(() => { runBtn.innerHTML = originalContent; runBtn.disabled = false; }, 2500);
+        }
+      });
+
+      function renderResults(data) {
+        document.getElementById('rankings-placeholder')?.remove();
+        const list = document.getElementById('rankings-list');
+        list.innerHTML = '';
+        const esc = s => s.replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+        data.rankings.forEach((r, i) => {
+          const best = i === 0;
+          const card = document.createElement('div');
+          card.className = best
+            ? 'bg-surface-container-lowest p-3.5 rounded-lg flex flex-col gap-2 relative overflow-hidden group hover:bg-surface-container-high transition-all shadow-md'
+            : 'bg-surface-container-lowest p-3.5 rounded-lg flex flex-col gap-2 relative overflow-hidden group hover:bg-surface-container-high transition-all';
+          const accentBar = best ? '<div class="absolute left-0 top-0 bottom-0 w-1 bg-primary-fixed"></div>' : '';
+          const badge = best
+            ? '<span class="font-label-caps text-label-caps px-1.5 py-0.5 rounded bg-primary-container text-on-primary-container font-bold">BEST MATCH</span>'
+            : '<span class="font-label-caps text-label-caps px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant">RANK #' + (i+1) + '</span>';
+          card.innerHTML = accentBar +
+            '<div class="flex items-start justify-between gap-3">' +
+              '<div class="flex items-center gap-3">' +
+                '<div class="relative w-16 h-16 rounded bg-surface-container overflow-hidden shrink-0"><img class="w-full h-full object-cover" src="' + r.thumb + '" alt="candidate"/></div>' +
+                '<div class="flex flex-col">' +
+                  '<div class="flex items-center gap-2"><span class="font-headline-sm text-body-md font-semibold ' + (best ? 'text-primary' : 'text-on-surface') + ' truncate">' + esc(r.name) + '</span>' + badge + '</div>' +
+                  '<span class="font-label-code text-label-code text-on-surface-variant">RANK #' + String(i+1).padStart(2,'0') + ' // 512-D COSINE PROJECTION</span>' +
+                  (best ? '<span class="font-body-sm text-body-sm text-secondary flex items-center gap-1 mt-0.5"><span class="material-symbols-outlined text-[14px]">check_circle</span> Closest vector alignment to REF_01</span>' : '') +
+                '</div>' +
+              '</div>' +
+              '<div class="text-right flex flex-col items-end shrink-0">' +
+                '<span class="font-metric-display text-metric-display ' + (best ? 'text-primary-fixed' : 'text-on-surface-variant') + ' font-bold leading-none">' + r.percent.toFixed(1) + '%</span>' +
+                '<span class="font-label-caps text-label-caps text-on-surface-variant mt-1">MATCH SHARE</span>' +
+              '</div>' +
+            '</div>' +
+            '<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden mt-1">' +
+              '<div class="' + (best ? 'bg-primary-fixed shadow-[0_0_8px_rgba(200,243,29,0.7)]' : 'bg-surface-tint opacity-60') + ' h-full rounded-full transition-all duration-700" style="width:' + r.percent.toFixed(1) + '%"></div>' +
+            '</div>';
+          list.appendChild(card);
+        });
+        document.getElementById('top-match-badge').innerHTML = '<span class="w-1.5 h-1.5 rounded-full bg-primary-fixed animate-ping"></span> TOP MATCH: ' + data.best_percent.toFixed(1) + '% MATCH SHARE';
+        document.getElementById('telemetry-processed').textContent = 'Processed ' + data.rankings.length + ' candidates in ' + data.elapsed_ms + 'ms (CPU, torch)';
+        document.getElementById('telemetry-matches').textContent = '1 best match identified: ' + data.best_name;
+        document.getElementById('gradcam-img').src = data.gradcam;
+        document.getElementById('gradcam-img').alt = 'Grad-CAM heatmap for best match ' + data.best_name;
+        document.getElementById('gradcam-target').textContent = 'Target: ' + data.best_name;
+        document.getElementById('gradcam-max').textContent = data.best_percent.toFixed(1) + '% (Match Share)';
+        document.getElementById('gradcam-peak').textContent = 'PEAK REGION: Layer4 Activation';
+        document.getElementById('verdict-sentence').textContent = data.sentence + ' The heatmap highlights the image regions that most influenced this similarity score.';
+      }
+    })();
+  </script></div></main></div></body></html>
