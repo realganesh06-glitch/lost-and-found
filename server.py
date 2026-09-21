@@ -1,3 +1,4 @@
+import os
 """Flask backend wiring the web UI to detector.py's existing functions.
 The UI (static/index.html) uploads a lost-item photo plus candidate photos in
 one request; this server saves them to a run folder, calls
@@ -195,4 +196,5 @@ def run_file(run_id, fname):
 
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=int(___import___("os").environ.get("PORT", 5000)))
+    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000))).environ.get("PORT", 5000)))
+
